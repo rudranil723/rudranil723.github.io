@@ -38,6 +38,16 @@ body {
   width: 100%;
 }
 
+.webcontainer {
+  width: 100%;
+  height: auto;
+}
+.atricles {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
 a {
   color: var(--clr-light);
 }
