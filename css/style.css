@@ -42,10 +42,7 @@
     width: 100%;
   }
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 /*general styles*/
 
 body {
@@ -385,7 +382,7 @@ nav img {
 #contact .overlay {
   background: rgba(0, 0, 0, 0.986);
 }
-#contact h2 {
+#contact h1 {
   padding-top: 2%;
   color: #45a29e;
   text-align: center;
@@ -409,9 +406,11 @@ nav img {
   padding: 9px;
   background-color: var(--clr-light);
   color: var(--clr-dark);
+  margin-bottom: 1%;
+  font-style: var(--fw-bold);
 }
 #contact .form-group input#emailTXT {
-  width: 75%;
+  width: 45%;
   border-bottom: 6px solid var(--clr-primaryS);
 }
 #contact .form-group input#emailTXT {
@@ -425,16 +424,134 @@ nav img {
   width: 55%;
   border-bottom: 6px solid var(--clr-secondary);
 }
-#contact #submitBTN {
-  color: white;
+.button {
+  border: chocolate;
+  color: #1f2833;
+  padding: 16px 32px;
+  text-align: end;
+  text-decoration: none;
+  display: inline-block;
+  font: 100;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-#contact #submitBTN:hover {
-  background-color: var(--clr-primary);
-  color: #45a29e;
-  transition: background-color 0.4s;
+#submitbtn {
+  background-color: var(--clr-light);
+  color: #1f2833;
+  border: 2.5px solid var(--clr-dark);
 }
 
-#contact #submitBTN span {
-  margin-right: 20px;
+#submitbtn:hover {
+  background-color: var(--clr-secondary);
+  box-shadow: 0 0 5px var(--clr-secondary), 0 0 25px var(--clr-secondary),
+    0 0 50px var(--clr-dark), 0 0 200px var(--clr-dark);
 }
+#submitbtn:hover::after {
+  width: 100%;
+}
+.send {
+  font-weight: bold;
+  font-size: larger;
+}
+#made {
+  color: #c5c6c7;
+  margin-top: 3%;
+  padding-left: 1%;
+}
+.downpart {
+  color: #45a29e;
+  float: right;
+}
+#contact.flex-container {
+  display: flex;
+}
+#contact .links {
+  float: right;
+  margin-right: 10%;
+  background-color: var(--clr-dark);
+}
+#contact .links a {
+  color: #1f2833;
+}
+.noir {
+  display: block;
+  background-color: var(--clr-secondary);
+  padding: 20px;
+  border: 3px solid var(--clr-light);
+}
+
 /* media queries*/
+@media screen and (max-width: 790px) {
+  body {
+    font-size: 18px;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 80px;
+  }
+  input {
+    text-align: center;
+  }
+  #about img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+  }
+  #about .info {
+    flex-direction: column-reverse;
+  }
+  #experience .skills {
+    margin-top: 20px;
+  }
+  form {
+    text-align: left;
+  }
+  #contact textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #home nav {
+    width: inherit;
+  }
+  #home img {
+    display: inherit;
+  }
+  #about .signature {
+    float: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social-links li {
+    display: block;
+    width: 100%;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  #about img {
+    width: 60%;
+  }
+
+  #skill-set #web-development-skills::before {
+    display: none;
+  }
+
+  #skill-set .skills {
+    width: 100%;
+    display: block;
+  }
+
+  #portfolio .overlay {
+    height: 70%;
+  }
+}
