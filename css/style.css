@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border-radius: 0 !important;
+  box-shadow: none;
 }
 * {
   padding: 0%;
@@ -54,6 +56,14 @@ body {
   width: 100%;
 }
 
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 3em;
+  justify-content: space-around;
+  height: 100%;
+}
 .webcontainer {
   width: 100%;
   height: auto;
@@ -128,6 +138,12 @@ nav img {
   width: 81px;
   position: absolute;
   padding-left: 25px;
+}
+@media screen and (mac-width: 768px) {
+  .nav {
+    border: none !important;
+    padding: 0 15px !important;
+  }
 }
 .nav-links {
   flex: 1;
@@ -373,6 +389,133 @@ nav img {
   float: right;
 }
 
+/*experience part*/
+
+#experience {
+  padding: 250px 0px;
+  margin: 0 auto;
+  padding: 0%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+/*Skills part*/
+
+#experience .center {
+  text-align: center;
+  font-style: var(--fw-bold);
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.skills-section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.skills-bar-container ul {
+  list-style: none;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.skills-bar-container li {
+  background-color: var(--clr-primary);
+  height: 5px;
+  margin-bottom: 45px;
+  padding-left: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.skills-bar-container h2 {
+  margin-bottom: 50px;
+}
+
+.skills-bar-container label {
+  color: var(--clr-dark);
+  position: relative;
+  font-size: 0.96em;
+  font-weight: 300;
+}
+
+.skills-bar-container .present {
+  color: var(--clr-dark);
+  font-size: 0.96em;
+  float: right;
+}
+
+.progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+#progress-html {
+  animation-name: progress-html;
+  animation-delay: 0.7s;
+}
+
+#progress-css {
+  animation-name: progress-css;
+  animation-delay: 1.4s;
+}
+
+#progress-C {
+  animation-name: progress-C;
+  animation-delay: 2.1s;
+}
+
+#progress-c2 {
+  animation-name: progress-C2;
+  animation-delay: 2.8s;
+}
+
+.progressred {
+  background-color: var(--clr-accent);
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes progress-C {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 47%;
+  }
+}
+
+@keyframes progress-C2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+/*contact part*/
+
 #contact {
   background: var(--clr-dark);
   background-size: cover;
@@ -386,6 +529,7 @@ nav img {
   padding-top: 2%;
   color: #45a29e;
   text-align: center;
+  font-size: 50px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #contact form {
@@ -480,6 +624,12 @@ nav img {
   background-color: var(--clr-secondary);
   padding: 20px;
   border: 3px solid var(--clr-light);
+}
+.noir {
+  box-shadow: #c5c6c7;
+  font-size: larger;
+  font-style: var(--fw-bold);
+  padding: 5px 15px;
 }
 
 /* media queries*/
