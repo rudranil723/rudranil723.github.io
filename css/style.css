@@ -111,6 +111,7 @@ h4 {
 
 p {
   color: var(--clr-light);
+  text-align: justify;
 }
 
 /*navigation part*/
@@ -333,23 +334,48 @@ nav img {
 }
 
 /*about part*/
+/*.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(https://i.pinimg.com/originals/68/35/53/683553b74f6bec9373fe00a0e4202d13.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+
+
+
+  #experience .center {
+  text-align: center;
+  font-style: var(--fw-bold);
+  font-size: 50px;
+  color: #45a29e;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+}*/
 #about {
   padding: 250px 0px;
   margin: 0 auto;
   padding: 0%;
+  background-color: #c5c6c7;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
   margin-right: 3%;
+}
+#about .fakeimg img {
+  width: 85px;
+  position: absolute;
+  margin-top: 0.75%;
+  margin-left: 33%;
+  padding-left: 25px;
 }
 #about .container {
   padding-top: 2%;
   padding-bottom: 4%;
 }
-#about .fakeimg img {
-  width: 82px;
-  position: absolute;
-  margin-top: 0.75%;
-  margin-left: 35%;
-  padding-left: 25px;
-}
+
 #about .info {
   display: flex;
   flex-direction: row;
@@ -360,9 +386,14 @@ nav img {
 #about h2 {
   padding-top: 1%;
   color: #45a29e;
-  font-size: 40px;
+  font-size: 50px;
+  font-style: var(--fw-bold);
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   position: relative;
+}
+#about p {
+  text-align: justify;
 }
 #about .info p {
   color: var(--clr-dark);
@@ -385,18 +416,31 @@ nav img {
 }
 #about .aboutimg img {
   width: 250px;
-  border-radius: 80%;
   float: right;
+}
+
+#about img {
+  border-radius: 80%;
+}
+
+@media screen and (max-width: 790px) {
+  p {
+    font-size: 1.5em;
+    color: var(--clr-dark);
+    font-family: "Times New Roman", Times, serif;
+  }
 }
 
 /*experience part*/
 
 #experience {
-  padding: 250px 0px;
   margin: 0 auto;
   padding: 0%;
   margin-right: 3%;
-  margin-left: 3%;
+  background-color: #c5c6c7;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 /*Skills part*/
@@ -405,6 +449,7 @@ nav img {
   text-align: center;
   font-style: var(--fw-bold);
   font-size: 50px;
+  color: #45a29e;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -417,6 +462,7 @@ nav img {
   list-style: none;
   padding: 25px 0;
   width: 100%;
+  margin-left: 3%;
 }
 
 .skills-bar-container li {
@@ -476,7 +522,7 @@ nav img {
 }
 
 .progressred {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-secondary);
 }
 
 @keyframes progress-html {
