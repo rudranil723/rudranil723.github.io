@@ -1,219 +1,135 @@
+<!--all the best-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rudranil Shil</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta charset="UFT-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/icon.jpg" type="images/x-icon" />
+    <!--adding icon to the website-->
+    <title>Rudranil Shil</title>
+    <!--this below link is for a font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--this below link is for background-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="css/logo.png" type="images/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/45aad71b9c.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-
   <body>
-    <div class="load"></div>
-    <!--loader-->
-    <!--landing page-->
-    <header>
-      <!--navigation part-->
-      <section class="header">
-        <nav class="nav" role="navigation">
-          <a href="https://www.youtube.com/channel/UCjsy4Z6umVMjm9woRGxEIbA"><img src="css/loggo2.png" alt="logo"/></a>
-          <div class="nav-links">
-            <ul>
-              <li class="nav_item"><a href="#home">Home</a></li>
-              <li class="nav_item"><a href="#about">About</a></li>
-              <li class="nav_item"><a href="#experience">Experince</a></li>
-              <li class="nav_item"><a href="#contact">Contact</a></li>
-            </ul>
+    <!--partial html-->
+    <html lang="en">
+      <head>
+        <title>Rudranil Shil</title>
+        <!--this below link is for a font-->
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+      </head>
+      <body>
+        <!--start of nav bar-->
+        <nav class="navbar">
+          <!-- LOGO image -->
+          <div class="logo">
+            <a href="#" id="nav-link"
+              ><img src="images/logo.jpg" alt="logo image" id="nav-image"
+            /></a>
           </div>
-        </nav>
-
-        <!--intro part-->
-        <div class="intro" id="home">
-          <h1 class="starting_intro">
-            Hey!! World, I'am <strong class="my_name">RUDRANIL SHIL</strong>
-          </h1>
-          <p class="intro_description">
-            Happy to see you here,I am an engineering student. I love to
-            experince and expolore technology
-          </p>
-          <img src="css/photo.jpeg" alt="my photo" class="intro__img" />
-        </div>
-        <!--social media part-->
-        <div class="social-media">
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=100008077007266"
-                class="fa fa-facebook"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/_a_leaf_shinobi_/"
-                class="fa fa-instagram"
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/rudranil723" class="fa fa-github"></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/rudranil-shil-49a2131b9/"
-                class="fa fa-linkedin"
-              ></a>
-            </li>
+          <!-- NAVIGATION MENU -->
+          <ul class="nav-links">
+            <!-- USING CHECKBOX -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="services">
+                <a href="#experience"> Experience</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                  <!--this region will be added later into a different page-->
+                  <li><a href="images/experience.html"> Education </a></li>
+                  <li><a href="images/experience.html"> Skills </a></li>
+                  <li><a href="images/experience.html"> Projects </a></li>
+                  <li><a href="/test/images/resume.pdf"> Resume </a></li>
+                  <li><a href="experience.html/#timeline"> timeline </a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </div>
           </ul>
-        </div>
-      </section>
-    </header>
+        </nav>
+        <!--end of navigation tag-->
 
-    <main>
-      <!--about part-->
-      <section id="about">
-        <div class="container">
-          <div class="fakeimg">
-            <img src="css/images (1).jpeg" />
-          </div>
-          <h2 class="abme">About me.</h2>
-          <div class="aboutimg">
-            <img src="css/photo2.jpg" alt="a photo of mine" />
-          </div>
-          <div class="row info">
-            <div class="col-sm-8">
-              <p>
-                Hello, my name is Rudranil Shil. I'm from Jalpaiguri, West
-                Bengal, India.
-                <br />
-                <br />
-                I am a student Web developer and designer. It's been a year
-                since I am in this field, I am on a self-taught journey to
-                become a professional Web Developer.<!--I believe my design
-                  experience has taught me how to work under impossible deadlines.-->
-                When the pressure increases I stay positive, calm, humble, and
-                productive with the project I am working on.
-                <br />
-                I'm really happy to be on this road and welcome all the new
-                challenges and triumphs ahead. The comradery in the developer
-                community is amazing to me. It keeps me motivated to work out
-                problems when I'm completely stuck. My time and energy are
-                dedicated to learning more and progressing each day to achieve
-                my goal of being a dependable and knowledgeable web- developer
-                who clients and development teams want to work with.
-                <br />
-                <br />
-                Thank you for your time.
-                <br />
-                <span class="signature">-ruddy</span>
-              </p>
+        <!--adding color gradient background-->
+        <div class="d-flex flex -column justify-content-center w-100 h-100">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          ></div>
+        </div>
+        <!--end of backgoround div-->
+        <br />
+        <main class="main" id="#home">
+          <section class="home_page">
+            <!--adding home image-->
+            <div class="home_img">
+              <img
+                src="./images/photo.jpeg"
+                alt="home page image"
+                id="homeimg"
+              />
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="experience" class="skills-section bg light padding-sm">
-        <div class="container">
-          <div class="row">
-            <h2 class="center">Skills:</h2>
-            <div class="skills-bar-container">
-              <ul>
-                <h3>web-devlopment:</h3>
-                <label>HTML</label>
-                <span class="percent" id="html-percent"></span>
-                <li><span class="progressbar progressred" id="progress-html"></span></li>
+            <br />
+            <!--for home name and description-->
+            <div class="home_name">
+              <h1 class="homehey">
+                Hey I'm, <span class="homename"> Rudranil Shil</span>
+              </h1>
 
-                <label>CSS</label>
-                <span class="percent" id="css-percent"></span>
-                <li><span class="progressbar progressred" id="progress-css"></span></li>
-
-                <h3>programing language:</h3>
-
-                <label>C</label>
-                <span class="percent" id="C-percent"></span>
-                <li><span class="progressbar progressred" id="progress-C"></span></li>
-
-                <label>C++</label>
-                <span class="percent" id="c2-percent"></span>
-                <li><span class="progressbar progressred" id="progress-c2"></span></li>
-              </ul>
+              <p class="homedes">Software/ Website Devloper</p>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
+            <!--end of home name and description-->
+            <br />
+            <!--this next part in for the home line -->
+            <hr />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <!--end of home line-->
 
-    <footer>
-      <section id="contact">
-        <div class="overlay">
-          <div class="container">
-            <h1>Contact Me:</h1>
+            <!--now we will work on home button for conatct part-->
 
-            <div class="row">
-              <div class="col-log-9">
-                <form role="form" method="post">
-                  <div class="form-group">
-                    <label for="nameTXT">Your name:</label>
-                    <input type="test" id="nameTXT" name="nameTXT" />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="emailTXT">Email Address:</label>
-                    <input type="email" id="emailTXT" name="emailTXT" />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="messageTXT">Message:</label>
-                    <textarea
-                      cols="36"
-                      rows="8"
-                      id="messageTXT"
-                      name="messageTXT"
-                    ></textarea>
-                  </div>
-                  <button class="button" id="submitbtn">
-                    <span class="send">send</span>
-                  </button>
-                </form>
-                <h4 id="made">made in 2021 with <i class="fas fa-headphones-alt"></i> and <i class="fas fa-heart"></i></h4>
-              </div>
-              <div class="flex-container">
-                <div class="links">
-                  <ul>
-                    <li class="noir" id="resume"><a href="css/CV.pdf">Resume</a></li>
-                  </ul>
-                </div>
+            <div class="homebutton" id="homecontactbutton">
+              <link
+                href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+                rel="stylesheet"
+              />
+              <button class="noselect" id="homecontactbutton">
+                <a href="#contact">Contact Me</a>
+              </button>
             </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+          </section>
+        </main>
+        <section id="about"></section>
+        <section id="contact"></section>
+      </body>
+    </html>
   </body>
+  <!--end of body tag-->
 </html>
