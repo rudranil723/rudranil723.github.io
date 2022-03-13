@@ -499,14 +499,9 @@ button:focus {
 }
 
 
-@media (max-width: 640px){
+@media (max-width: 480px){
   
-  .socialicon{
-    margin-top: 8%;
-    position: absolute;
-  }
-
   .homesocial{
-    margin-top: 23%;
+    margin-top: 18%;
   }
 }
