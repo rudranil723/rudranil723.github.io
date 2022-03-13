@@ -188,7 +188,9 @@ input[type="checkbox"] {
 
 #homeimg {
   padding-top: 8%;
-  border-radius: 55%;
+  float: center;
+  margin-left: 15%;
+  max-width: 500%;
   /*filter: drop-shadow(3px 5px 5px #a240a2)*/
 }
 
@@ -243,7 +245,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .noselect {
@@ -289,8 +290,9 @@ button:hover {
 
 button:hover:after {
   background: var(--clr-light);
-  box-shadow: 0px 0px 20px var(--clr-accent) /*#ffc421*/, 0px 0px 30px  var(--clr-accent)/*#ffc421*/,
-    inset 0px 0px 10px var(--clr-accent)/*#ffc421*/;
+  box-shadow: 0px 0px 20px var(--clr-accent) /*#ffc421*/,
+    0px 0px 30px var(--clr-accent) /*#ffc421*/,
+    inset 0px 0px 10px var(--clr-accent) /*#ffc421*/;
   animation: spin 1s infinite linear;
 }
 
@@ -315,7 +317,93 @@ button:hover:after {
 button:focus {
   outline: none;
 }
+/*end of home page button */
 
+/*social media part start*/
+
+.homesocial{
+  width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 18%;
+}
+
+.socialicon {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialicon li{
+  list-style: none;
+}
+
+.socialicon li a{
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.socialicon li a .icon{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.socialicon li a:hover .icon{
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+
+.socialicon li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.socialicon li a:hover:before{
+  top: 0;
+}
+
+.socialicon li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.socialicon li:nth-child(2) a:before{
+  background: #8a3ab9;
+}
+
+.socialicon li:nth-child(3) a:before{
+  background: #0077b5;
+}
+
+.socialicon li:nth-child(4) a:before{
+  background: #171515 /*#dd4b39*/;
+}
 /*end of home page*/
 
 /*start of about part*/
@@ -376,6 +464,7 @@ button:focus {
 
   .home_img {
     width: 50%;
+    margin-left: 17%;
   }
 
   .homehey {
@@ -386,9 +475,25 @@ button:focus {
     font-size: 100%;
   }
 
-  
   .homebutton {
     height: 18vh;
   }
-  
+
+  .socialicon{
+    margin-top: 5%;
+  }
+
+  .homesocial{
+    margin-top: 23%;
+  }
+
+  .socialicon li a{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    margin: 0 5px;
+    display: block;
+    z-index: 0;
+  }
 }
