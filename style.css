@@ -497,3 +497,16 @@ button:focus {
     z-index: 0;
   }
 }
+
+
+@media (max-width: 640px){
+  
+  .socialicon{
+    margin-top: 8%;
+    position: absolute;
+  }
+
+  .homesocial{
+    margin-top: 23%;
+  }
+}
