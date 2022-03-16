@@ -176,7 +176,7 @@ input[type="checkbox"] {
   margin-right: 25%;
 }
 
-/*stylisng home page*/
+/**stykishg of thre home page starts**/
 
 .home_img {
   width: 20%;
@@ -237,7 +237,6 @@ hr {
   -webkit-animation: fade 4500ms ease-in-out infinite;
 }
 
-/*styling the home button */
 
 .homebutton {
   height: 25vh;
@@ -319,13 +318,13 @@ button:focus {
 }
 /*end of home page button */
 
-/*social media part start*/
+/*social media part start home*/
 
 .homesocial {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 60%;
+  top: 57%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -403,21 +402,108 @@ button:focus {
 .socialicon li:nth-child(4) a:before {
   background: #171515 /*#dd4b39*/;
 }
-/*end of home page*/
 
-/*start of about part*/
+/**end of home part 16.3.2022**/
 
-#about {
-  background-color: white;
+
+/**start of about part**/
+
+.wrap {
+height: 100%;
+margin-top: 10%;
+background-color: #fff;
 }
 
-/*stying the media of  nav part*/
+#about:padding {
+  padding: 4%; /* i have confusiions regrading this part*/
+}
+
+/*main layout part*/
+
+.aboutheading {
+  text-align: center;
+  font-size: 35px;
+  color: var(--clr-secondary);
+  padding-top: 2.5%;
+  font-weight: bold;
+}
+
+.aboutsubheading {
+  text-align: center;
+  font-size: 25px;
+}
+/** Layout for the about part**/
+
+.intro-details {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.intro-details > .intro-image {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-details > .intro-paragraph {
+  width: 50%;
+}
+
+.about-info {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+.about-info > .profile {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.about-intro a{
+  color: purple;
+  font-size: bolder;
+}
+.about p {
+  color: var(--clr-accent);
+  text-align: center;
+  font-family: "lora-regular", serif;
+  line-height: 1.5;
+  margin-top: 10%;
+  
+}
+
+.intro-paragraph p {
+  line-height: 1.8 !important;
+  font-size: 20px;
+}
+
+.intro-image > .image {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.intro-image > .image > .image-circle {
+  width: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid #610872;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+/**end of about part**/
 
 /* APPLYING MEDIA QUERIES */
 
 /*this is for ipads and tablets */
 
 @media (max-width: 768px) {
+
+  /**this is for the navigation part home **/
   .navbar {
     justify-content: space-between;
   }
@@ -463,6 +549,8 @@ button:focus {
     color: var(--clr-dark);
   }
 
+  /*for the  home part*/
+
   .home_img {
     width: 50%;
     margin-left: 17%;
@@ -480,6 +568,8 @@ button:focus {
     height: 18vh;
   }
 
+  /*stying the media of  nav part*/
+
   /*.socialicon {
     margin-top: 5%;
   }
@@ -496,18 +586,20 @@ button:focus {
     margin: 0 5px;
     display: block;
   }*/
-  
+
+  .intro-image > .image {
+    max-width: 95%;
+  }
 }
 
-/*this is for phones*/
+/** media for the phone **/
 
 @media (max-width: 480px) {
- 
-
+  /*for the home social media part*/
   .homesocial {
-    margin-top: 50%;
+    margin-top: 20%;
   }
-  
+
   .socialicon li a {
     width: 50px;
     height: 50px;
@@ -515,5 +607,59 @@ button:focus {
     font-size: 25px;
     margin: 0 4px;
     display: block;
+  }
+  /*about part*/
+  .aboutheading {
+    font-size: 25px;
+  }
+
+  .aboutsubheading {
+    font-size: 15px;
+    margin-top: 0%;
+  }
+
+  /*about part*/
+  .intro-image {
+    width: 100%;
+  }
+  .intro-image .image {
+    margin-top: 5%;
+  }
+  .intro-image > .image {
+    width: 40%;
+  }
+  .about p{
+    margin-top: 1.5%;
+    font-size: 5px;
+  }
+}
+
+/** Media Queries  foer the about part**/
+
+@media all and (max-width: 800px) {
+  .about-info {
+    flex-direction: column;
+  }
+
+  .intro-image > .image {
+    max-width: 95%;
+  }
+  .intro-paragraph p {
+    line-height: 1.5 !important;
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 500px) {
+  .intro-details > .intro-image {
+    width: 100%;
+  }
+
+  .intro-details > .intro-paragraph {
+    width: 95%;
+    text-align: center;
+  }
+
+  .intro-image > .image {
+    width: 40%;
   }
 }
