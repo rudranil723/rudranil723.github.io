@@ -1,4 +1,7 @@
 /*all the best*/
+
+/**8.2.2022**/
+
 /*basic designing and css*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
@@ -176,7 +179,7 @@ input[type="checkbox"] {
   margin-right: 25%;
 }
 
-/**stykishg of thre home page starts**/
+/*stylisng home page*/
 
 .home_img {
   width: 20%;
@@ -237,6 +240,7 @@ hr {
   -webkit-animation: fade 4500ms ease-in-out infinite;
 }
 
+/*styling the home button */
 
 .homebutton {
   height: 25vh;
@@ -318,7 +322,7 @@ button:focus {
 }
 /*end of home page button */
 
-/*social media part start home*/
+/*social media part start*/
 
 .homesocial {
   width: 100px;
@@ -402,108 +406,13 @@ button:focus {
 .socialicon li:nth-child(4) a:before {
   background: #171515 /*#dd4b39*/;
 }
-
-/**end of home part 16.3.2022**/
-
-
-/**start of about part**/
-
-.wrap {
-height: 100%;
-margin-top: 10%;
-background-color: #fff;
-}
-
-#about:padding {
-  padding: 4%; /* i have confusiions regrading this part*/
-}
-
-/*main layout part*/
-
-.aboutheading {
-  text-align: center;
-  font-size: 35px;
-  color: var(--clr-secondary);
-  padding-top: 2.5%;
-  font-weight: bold;
-}
-
-.aboutsubheading {
-  text-align: center;
-  font-size: 25px;
-}
-/** Layout for the about part**/
-
-.intro-details {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.intro-details > .intro-image {
-  width: 24%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.intro-details > .intro-paragraph {
-  width: 50%;
-}
-
-.about-info {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-}
-.about-info > .profile {
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-.about-intro a{
-  color: purple;
-  font-size: bolder;
-}
-.about p {
-  color: var(--clr-accent);
-  text-align: center;
-  font-family: "lora-regular", serif;
-  line-height: 1.5;
-  margin-top: 10%;
-  
-}
-
-.intro-paragraph p {
-  line-height: 1.8 !important;
-  font-size: 20px;
-}
-
-.intro-image > .image {
-  max-width: 75%;
-  display: block;
-  margin: 0 auto;
-}
-.intro-image > .image > .image-circle {
-  width: 100%;
-  border-radius: 50%;
-  margin: 0 auto;
-  border: 5px solid #610872;
-  transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-}
-/**end of about part**/
+/*end of home page*/
 
 /* APPLYING MEDIA QUERIES */
 
 /*this is for ipads and tablets */
 
 @media (max-width: 768px) {
-
-  /**this is for the navigation part home **/
   .navbar {
     justify-content: space-between;
   }
@@ -549,8 +458,6 @@ background-color: #fff;
     color: var(--clr-dark);
   }
 
-  /*for the  home part*/
-
   .home_img {
     width: 50%;
     margin-left: 17%;
@@ -586,18 +493,13 @@ background-color: #fff;
     margin: 0 5px;
     display: block;
   }*/
-
-  .intro-image > .image {
-    max-width: 95%;
-  }
 }
 
-/** media for the phone **/
+/*this is for phones*/
 
 @media (max-width: 480px) {
-  /*for the home social media part*/
   .homesocial {
-    margin-top: 80%;
+    margin-top: 20%;
   }
 
   .socialicon li a {
@@ -608,58 +510,107 @@ background-color: #fff;
     margin: 0 4px;
     display: block;
   }
-  /*about part*/
-  .aboutheading {
-    font-size: 25px;
-  }
-
-  .aboutsubheading {
-    font-size: 15px;
-    margin-top: 0%;
-  }
-
-  /*about part*/
-  .intro-image {
-    width: 100%;
-  }
-  .intro-image .image {
-    margin-top: 5%;
-  }
-  .intro-image > .image {
-    width: 40%;
-  }
-  .about p{
-    margin-top: 1.5%;
-    font-size: 5px;
-  }
 }
 
-/** Media Queries  foer the about part**/
+/**starting the stylisng of about part**/
+/*
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*/
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 8%;
+}
+
+/**main layout part**/
+.aboutheading {
+  text-align: center;
+  color: var(--clr-secondary);
+  padding-top: 2.5%;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+.aboutsubheading {
+  text-align: center;
+  color: #171515;
+  font-size: 27px;
+  padding: 4px;
+}
+.intro-details {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.intro-details > .intro-image {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-details > .intro-paragraph {
+  width: 55%;
+}
+
+.intro-image > .image {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.intro-image > .image > .image-circle {
+  width: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid rgb(143, 11, 143);
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.aboutfirstpara {
+  color: var(--clr-accent);
+  font-family: "lora-regular", serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.8 !important;
+  margin-top: 5%;
+  padding-left: 5%;
+}
+
+/**media quaries**/
 
 @media all and (max-width: 800px) {
-  .about-info {
-    flex-direction: column;
+  .aboutheading {
+    font-size: 28px;
+    margin-top: 5%;
   }
-
-  .intro-image > .image {
-    max-width: 95%;
-  }
-  .intro-paragraph p {
-    line-height: 1.5 !important;
+  .aboutsubheading {
     font-size: 18px;
   }
 }
+
 @media all and (max-width: 500px) {
   .intro-details > .intro-image {
     width: 100%;
   }
-
   .intro-details > .intro-paragraph {
-    width: 95%;
+    width: 100%;
     text-align: center;
   }
 
   .intro-image > .image {
-    width: 40%;
+    margin-top: 2.5%;
+    width: 50%;
+  }
+  .aboutfirstpara {
+    margin-top: 2.5%;
+    padding-left: 0%;
   }
 }
