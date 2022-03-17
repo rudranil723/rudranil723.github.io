@@ -597,7 +597,7 @@ background-color: #fff;
 @media (max-width: 480px) {
   /*for the home social media part*/
   .homesocial {
-    margin-top: 60%;
+    margin-top: 80%;
   }
 
   .socialicon li a {
