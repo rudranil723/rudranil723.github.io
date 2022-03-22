@@ -513,12 +513,6 @@ button:focus {
 }
 
 /**starting the stylisng of about part**/
-/*
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-*/
 
 .wrap {
   width: 100%;
@@ -584,6 +578,54 @@ button:focus {
   padding-left: 5%;
 }
 
+.about-info {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  padding: 4%;
+}
+.about-info > .profile {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  font-size: 18px;
+}
+.aboutprofile {
+  justify-content: center;
+  padding-left: 4%;
+  padding-top: 8%;
+}
+.aboutleft {
+  float: right;
+  width: 50%;
+}
+.aboutright {
+  float: left;
+  width: 50%;
+}
+.aboutprofile h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 19px;
+}
+.aboutprofile p {
+  color: rgb(82, 78, 78);
+  font-family: "lora-regular", serif;
+  line-height: 1.5;
+}
+.about-info h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.115rem;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.about-info p {
+  color: rgb(82, 78, 78);
+  font-family: "lora-regular", serif;
+  line-height: 1.5;
+}
+
 /**media quaries**/
 
 @media all and (max-width: 800px) {
@@ -612,5 +654,9 @@ button:focus {
   .aboutfirstpara {
     margin-top: 2.5%;
     padding-left: 0%;
+  }
+  .intro-paragraph {
+    font-size: 15px;
+    padding: 3%;
   }
 }
