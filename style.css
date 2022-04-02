@@ -660,3 +660,236 @@ button:focus {
     padding: 3%;
   }
 }
+/*end of about section */
+
+/**skills section**/
+
+#skillsection {
+  /*background: var(--clr-secondary);*/
+  font: 12px normal Arial;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.skheading {
+  text-align: center;
+  font-size: 35px;
+  font-size: bolder;
+}
+
+#skillsection h2 {
+  font-size: 2.7em;
+  font-weight: normal;
+  padding: 10px 0 16px 0;
+  margin: 0 0 30px;
+  text-align: center;
+  color: #fff/*#2187e7*/;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
+  background: #000;
+  border-radius: 2px;
+  border: 1px solid #2187e7;
+  box-shadow: 0px 0px 50px -8px #2187e7;
+}
+#skillsection h2.plataformas {
+  border: 1px solid #9acd32;
+  box-shadow: 0px 0px 50px -8px #9acd32;
+  color: #fff/*#9acd32*/;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #9acd32, 0 0 20px #9acd32;
+}
+#skillsection h2.programas {
+  border: 1px solid #ff4500;
+  box-shadow: 0px 0px 50px -8px #ff4500;
+  color: #fff/*#ff4500*/;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #ff4500, 0 0 20px #ff4500;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--clr-secondary);
+}
+
+.col {
+  width: 23%;
+  margin: 0 5%;
+  position: relative;
+  float: left;
+  font-size: 12px;
+  line-height: 2em;
+  padding: 5% 0;
+}
+
+.skill {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.skill li {
+  margin-bottom: 70px;
+  background: #030303;
+  height: 6px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.skill li em {
+  position: relative;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #dedede;
+  top: -28px;
+}
+
+.blueline {
+  height: 3px;
+  margin: 2px 0;
+  background: #2187e7;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.6);
+}
+
+.greenline {
+  height: 3px;
+  margin: 2px 0;
+  background: #9acd32;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
+}
+.redline {
+  height: 3px;
+  margin: 2px 0;
+  background: #ff4500;
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0, 0.4);
+}
+
+.titulo {
+  opacity: 1;
+  animation: titulo 5s ease-out;
+}
+
+/*programacion*/
+.html {
+  width: 70%;
+  animation: html 2s ease-out;
+}
+.css {
+  width: 55%;
+  animation: css 2s ease-out;
+}
+.php {
+  width: 30%;
+  animation: php 2s ease-out;
+}
+
+/*plataformas*/
+.wordpress {
+  width: 60%;
+  animation: wordpress 2s ease-out;
+}
+.prestashop {
+  width: 70%;
+  animation: prestashop 2s ease-out;
+}
+
+/*programas*/
+.dreamweaver {
+  width: 40%;
+  animation: dreamweaver 2s ease-out;
+}
+.illustrator {
+  width: 30%;
+  animation: illustrator 2s ease-out;
+}
+.photoshop {
+  width: 50%;
+  animation: photoshop 2s ease-out;
+}
+
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*programacion*/
+@keyframes html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes php {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+/*plataformas*/
+@keyframes wordpress {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes prestashop {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/*programas*/
+@keyframes dreamweaver {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes illustrator {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px){ 
+  #skillsection h2 {font-size:2.2em; padding: 10px 0 15px 0;}
+  .col {width: 90%;}
+}
