@@ -41,7 +41,32 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
         />
+        <!--for the contact page-->
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:400,100,300"
+          rel="stylesheet"
+          type="text/css"
+        />
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway:100,400,700"
+          rel="stylesheet"
+        />
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Oswald:200,400,700"
+          rel="stylesheet"
+        />
+
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        />
+
+        <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
       </head>
+
       <body>
         <!--start of nav bar-->
         <nav class="navbar">
@@ -225,45 +250,175 @@
         <section id="skillsection">
           <div class="container">
             <div class="headingskills">
-              <h1 class="skheading">Skills:</h1>
+              <h1 class="skheading">SKILLS:</h1>
             </div>
             <div class="col">
               <h2 class="titulo">Web devlopment</h2>
               <ul class="skill">
                 <li><span class="blueline html"></span><em>HTML</em></li>
                 <li><span class="blueline css"></span><em>CSS</em></li>
-                <li><span class="blueline php"></span><em>Javascript</em></li>
+                <li>
+                  <span class="blueline javascript"></span><em>Javascript</em>
+                </li>
               </ul>
             </div>
             <div class="col">
-              <h2 class="plataformas titulo">Progrming languages</h2>
+              <h2 class="plataformas titulo">Programing languages</h2>
               <ul class="skill">
                 <li>
-                  <span class="greenline wordpress"></span><em>C programing</em>
+                  <span class="greenline Cprogram"></span><em>C programing</em>
                 </li>
-                <li>
-                  <span class="greenline prestashop"></span><em>Python</em>
-                </li>
+                <li><span class="greenline python"></span><em>Python</em></li>
               </ul>
             </div>
             <div class="col">
               <h2 class="programas titulo">other skills</h2>
               <ul class="skill">
                 <li>
-                  <span class="redline dreamweaver"></span><em>photography</em>
+                  <span class="redline photography"></span><em>photography</em>
                 </li>
                 <li>
                   <span class="redline illustrator"></span
                   ><em>comunication skills</em>
                 </li>
-                <li>
-                  <span class="redline photoshop"></span><em>Photoshop</em>
-                </li>
+                <li><span class="redline photoshop"></span><em>DSA</em></li>
               </ul>
             </div>
           </div>
         </section>
-        <section id="contact"></section>
+
+        <!--end of skills section-->
+
+        <!--start of contact section-->
+
+        <section id="contact">
+          <div class="sectionheader"><h1>contact</h1></div>
+
+          <!--left contcact page start-->
+
+          <div class="contact-wrapper" id="contactstills">
+            <form
+              action="https://formspree.io/f/xeqnlyng"
+              method="POST"
+              id="contact-form"
+              class="form-horizontal"
+              role="form"
+            >
+              <div class="form-group" id="nameemail">
+                <div class="col-sm-12">
+                  <label>
+                    <input type="text" name="name" placeholder="NAME:" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" id="nameemail">
+                <div class="col-sm-12">
+                  <label>
+                    <input type="email" name="email" placeholder="EMAIL:" />
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-control">
+                <label>
+                  <textarea
+                    rows="10"
+                    name="message"
+                    placeholder="YOUR MESSAGE:"
+                  ></textarea>
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary send-button"
+                id="submit"
+              >
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i
+                  ><span class="send-text">SEND</span>
+                </div>
+              </button>
+            </form>
+
+            <!--left contact page end-->
+
+            <div class="rightcontainer">
+              <ul class="contact-list">
+                <li class="list-item">
+                  <i class="fa fa-map-marker fa-2x"
+                    ><a
+                      href="https://www.google.com/maps/@22.4741781,88.4175497,16.39z"
+                      ><span class="contact-text place"
+                        >Kolkata, West Bengal</span
+                      ></a
+                    ></i
+                  >
+                </li>
+
+                <li class="list-item">
+                  <i class="fa fa-phone fa-2x"
+                    ><span class="contact-text phone"
+                      ><a href="tel: +91 8016613206" title="Give me a call"
+                        >(+91) 8016613206</a
+                      ></span
+                    ></i
+                  >
+                </li>
+
+                <li class="list-item">
+                  <i class="fa fa-envelope fa-2x"
+                    ><span class="contact-text gmail"
+                      ><a
+                        href="mailto:rudranilshil@gmail.com"
+                        title="Send me an email"
+                        >rudranilshil@gmail.com</a
+                      ></span
+                    ></i
+                  >
+                </li>
+              </ul>
+
+              <br />
+
+              <div class="contactsocial">
+                <link
+                  rel="stylesheet"
+                  href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+                  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+                  crossorigin="anonymous"
+                />
+
+                <ul class="social-media-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/rudranil-shil-49a2131b9/"
+                      ><i class="fab fa-linkedin-in icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rudranil723"
+                      ><i class="fab fa-github icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCjsy4Z6umVMjm9woRGxEIbA"
+                      ><i class="fab fa-youtube icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/Rudranilshil7">
+                      <i class="fab fa-twitter icon"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyright">&copy; MADE WITH MUSIC AND TEA</div>
+            </div>
+          </div>
+        </section>
       </body>
     </html>
   </body>
