@@ -260,7 +260,7 @@ hr {
   -webkit-tap-highlight-color: transparent;
 }
 
-button {
+.homebutton button {
   width: 150px;
   height: 50px;
   cursor: pointer;
@@ -274,7 +274,7 @@ button {
   transition: 500ms;
 }
 
-button:after {
+.homebutton button:after {
   content: "";
   position: absolute;
   transform: translateX(-55px) translateY(-40px);
@@ -286,12 +286,12 @@ button:after {
   transition: 500ms;
 }
 
-button:hover {
+.homebutton button:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-button:hover:after {
+.homebutton button:hover:after {
   background: var(--clr-light);
   box-shadow: 0px 0px 20px var(--clr-accent) /*#ffc421*/,
     0px 0px 30px var(--clr-accent) /*#ffc421*/,
@@ -317,7 +317,7 @@ button:hover:after {
   }
 }
 
-button:focus {
+.homebutton button:focus {
   outline: none;
 }
 /*end of home page button */
@@ -662,18 +662,26 @@ button:focus {
 }
 /*end of about section */
 
-/**skills section**/
+/**start of skills section**/
 
 #skillsection {
-  /*background: var(--clr-secondary);*/
   font: 12px normal Arial;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  color: #fff;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--clr-secondary);
 }
 .skheading {
   text-align: center;
+  font: 300 60px ;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 0 auto;
+  padding: 4%;
   font-size: 35px;
-  font-size: bolder;
 }
 
 #skillsection h2 {
@@ -682,7 +690,7 @@ button:focus {
   padding: 10px 0 16px 0;
   margin: 0 0 30px;
   text-align: center;
-  color: #fff/*#2187e7*/;
+  color: #fff /*#2187e7*/;
   text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
   background: #000;
   border-radius: 2px;
@@ -692,22 +700,17 @@ button:focus {
 #skillsection h2.plataformas {
   border: 1px solid #9acd32;
   box-shadow: 0px 0px 50px -8px #9acd32;
-  color: #fff/*#9acd32*/;
+  color: #fff /*#9acd32*/;
   text-shadow: 1px 1px 5px #000, 0 0 10px #9acd32, 0 0 20px #9acd32;
 }
 #skillsection h2.programas {
   border: 1px solid #ff4500;
   box-shadow: 0px 0px 50px -8px #ff4500;
-  color: #fff/*#ff4500*/;
+  color: #fff /*#ff4500*/;
   text-shadow: 1px 1px 5px #000, 0 0 10px #ff4500, 0 0 20px #ff4500;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: var(--clr-secondary);
-}
+
 
 .col {
   width: 23%;
@@ -781,23 +784,23 @@ button:focus {
   width: 55%;
   animation: css 2s ease-out;
 }
-.php {
+.javascript {
   width: 30%;
   animation: php 2s ease-out;
 }
 
 /*plataformas*/
-.wordpress {
+.Cprogram {
   width: 60%;
   animation: wordpress 2s ease-out;
 }
-.prestashop {
+.python {
   width: 70%;
   animation: prestashop 2s ease-out;
 }
 
 /*programas*/
-.dreamweaver {
+.photography {
   width: 40%;
   animation: dreamweaver 2s ease-out;
 }
@@ -836,7 +839,7 @@ button:focus {
     width: 55%;
   }
 }
-@keyframes php {
+@keyframes javascript {
   0% {
     width: 0px;
   }
@@ -846,7 +849,7 @@ button:focus {
 }
 
 /*plataformas*/
-@keyframes wordpress {
+@keyframes Cprogram {
   0% {
     width: 0px;
   }
@@ -854,7 +857,7 @@ button:focus {
     width: 60%;
   }
 }
-@keyframes prestashop {
+@keyframes python {
   0% {
     width: 0px;
   }
@@ -864,7 +867,7 @@ button:focus {
 }
 
 /*programas*/
-@keyframes dreamweaver {
+@keyframes photography {
   0% {
     width: 0px;
   }
@@ -889,7 +892,240 @@ button:focus {
   }
 }
 
-@media (max-width: 480px){ 
-  #skillsection h2 {font-size:2.2em; padding: 10px 0 15px 0;}
-  .col {width: 90%;}
+@media (max-width: 480px) {
+  #skillsection h2 {
+    font-size: 2.2em;
+    padding: 10px 0 15px 0;
+  }
+  .col {
+    width: 90%;
+  }
+}
+
+/**end of skills section**/
+
+/**starting contact portion**/
+
+#contact{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.sectionheader{
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.contact-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 4%;
+  position: relative;
+  max-width: 65%;
+  /*max-width: 900px*/
+}
+.form-horizontal {
+  /*float: left;*/
+  max-width: 50%/*400px*/;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+.form-control, 
+textarea {
+  max-width: 400px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+
+.form-control{
+  padding-left: 2%;
+}
+
+.form-group{
+  margin: 2%;
+  max-width: 100%;
+}
+.form-group input{
+  width: 400px;
+}
+.form-control textarea{
+  width: 400px;
+}
+.send-button {
+  margin-top: 3.5%;
+  height: 34px;
+  width: 400px;
+  margin-left: 2%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+.alt-send-button {
+  width: 100%;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+.send-text {
+  display: block;
+  margin-top: 20px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/**begin right contact page**/
+
+.rightcontainer{
+  max-width: 90%;
+}
+.contact-list{
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 4%;
+}
+.list-item{
+  line-height: 3.5;
+  color: #fff;
+}
+.contact-text{
+  font: 300 18px 'Lato',sans-serif;
+  letter-spacing: 1.9px;
+  color: #fff;
+  
+}
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+.contact-text a {
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+/*social media part*/
+
+.contactsocial{
+  position: relative;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.social-media-list{
+  display: flex;
+  position: relative;
+  top: 5%;
+  left: 15%;
+  margin-top: 5%;
+  transform: translate(-20%, -50%);
+}
+.contactsocial li{
+  list-style: none;
+}
+.contactsocial li a{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  color: var(--clr-secondary);
+}
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #fff;
+  margin-top: 2%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+/* Begin Media Queries*/
+
+@media screen and (max-width: 480px){
+  .sectionheader{
+    font-size: 20px;
+    margin-left: 3%;
+  }
+  .contact-wrapper{
+    right: 7%;
+  }
+  .form-group input{
+    width: 300px;
+  }
+  .form-control textarea{
+    width: 300px;
+  }
+  .send-button{
+    width: 300px;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-horizontal {
+    margin: 0 auto;
+  }  
+  .form-horizontal{
+    max-width: 300px;
+  }
+
+  /**right side **/
+
+  .rightcontainer{
+    max-width: 400px;
+    margin-top: 8%;
+  }
+  .contact-list{
+    margin-left: 22px;
+  }
+  .place {
+    margin-left: 32px;
+    font-size: 10px;
+    font-weight: bold;
+    
+  }
+  
+  .phone {
+    margin-left: 26px;
+    font-size: 12px;
+  }
+  
+  .gmail {
+    margin-left: 23px;
+  }
+  .social-media-list{
+    left:  30%;
+    top: 10%;
+  }
+  .contactsocial li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    position: relative;
+  }
 }
