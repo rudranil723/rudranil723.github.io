@@ -1052,7 +1052,7 @@ textarea {
   overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
-  color: var(--clr-secondary);
+  color: black;
 }
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
@@ -1100,13 +1100,14 @@ textarea {
     margin-top: 8%;
   }
   .contact-list{
-    margin-left: 22px;
+    margin-left: 24px;
+  }
+  .list-item{
+    width: 400px;
   }
   .place {
     margin-left: 32px;
-    font-size: 10px;
-    font-weight: bold;
-    
+    font-size: 20px;    
   }
   
   .phone {
@@ -1128,4 +1129,73 @@ textarea {
     font-size: 20px;
     position: relative;
   }
+  .copyright{
+    margin-left: 40%;
+    color: wheat;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .sectionheader{
+    font-size: 20px;
+    margin-left: 3%;
+  }
+  .contact-wrapper{
+    right: 15%;
+  }
+ 
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-horizontal {
+    margin: 0 auto;
+  }  
+  .form-horizontal{
+    max-width: 200px;
+  }
+
+  /**right side **/
+
+  .rightcontainer{
+    max-width: 300px;
+    margin-top: 8%;
+  }
+  .contact-list{
+    margin-left: 22px;
+  }
+  .list-item{
+    width: 300px;
+  }
+  .place {
+    margin-left: 32px;
+    font-size: 20px;    
+  }
+  
+  .phone {
+    margin-left: 26px;
+    font-size: 20px;
+  }
+  
+  .gmail {
+    margin-left: 23px;
+    font-size: 17px;
+  }
+  
+  .social-media-list{
+    left:  30%;
+    top: 10%;
+  }
+  .contactsocial li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    position: relative;
+  }
+  .copyright{
+    margin-left: 40%;
+    color: wheat;
+  }
+
 }
